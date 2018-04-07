@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Mute New Tabs</title>
+		<style>
+			body, html {
+				padding: 0;
+				margin: 0;
+			}
+			body {
+				font-size: 14px;
+				font-family: system-ui, sans-serif;
+			}
+			a, a:visited {
+				color: #4078c0;
+			}
+			input[type=checkbox], input[type=radio] {
+				vertical-align: middle;
+				position: relative;
+				bottom: 1px;
+				margin-right: 0.45em;
+			}
+			input[type=radio] {
+				bottom: 2px;
+			}
+			label.toggle {
+				white-space: nowrap;
+				padding: 0.35em 0.75em 0.35em 0.5em;
+				display: block;
+				-webkit-user-select: none;
+				user-select: none;
+			}
+			.info {
+				padding: 0.35em 0.75em 0.35em 0.5em;
+			}
+			.checkbox-equivalent-space {
+				visibility: hidden;
+			}
+			label.toggle:hover {
+				background-color: #4A90D9;
+				color: #fff;
+			}
+			small {
+				color: #777;
+			}
+		</style>
+	</head>
+	<body>
+		<label class="toggle" for="toggle"><input type="checkbox" class="mute-all-tabs" id="mute-all-tabs">Mute all tabs</label>
+		<script src="popup.js"></script>
+	</body>
+
+	<div class="info">
+	<small>
+		<p>CTRL+M = MUTE </p>
+		<p>ALT+M = UNMUTE </p>
+	</small>
+	</div>
+</html>
